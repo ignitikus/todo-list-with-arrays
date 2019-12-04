@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Componentize</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="app jumbotron">
+      <h1 >Todo</h1>
+        <section id='section1' class="input-group-prepend">
+          <label for="todo-input" class="input-group-text" id="basic-addon3">Add to your todo list!</label>
+          <input class="todo-input "type="text" name="todo-input">
+          <button class="add-todo btn btn-primary">ADD</button>
+        </section>
+        <div class="two-buttons">
+        <section id='section2' class="input-group-prepend">
+          <button class="remove-todo btn btn-primary">CLEAR COMPLETED</button>
+        </section>
+          <button class="remove-everything btn btn-primary">CLEAR ALL</button>
+        </section>
+      </div>
+      <ol class="todo-list list-group"></ol>
+    </div>
+    <script src = "./addToToDo.js"></script>
+    <script src = "./addsList.js"></script>
+    <script src = "./removeEverything.js"></script>
+  </body>
+</html>
